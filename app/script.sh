@@ -2,8 +2,8 @@
 
 RESULT=`dig +short +time=3 +tries=1 nordicom.no`
 
+date
 if [ "${RESULT}" == ";; connection timed out; no servers could be reached" ]; then
-  date
-  echo "NODE_IP: $MY_NODE_IP"
-  echo "POD_IP:  $MY_POD_IP"
+  echo "NODE_IP: $NODE_IP"
+  echo "POD_IP:  $POD_IP"
 fi
