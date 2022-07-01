@@ -2,8 +2,6 @@
 
 set -x
 
-sleep 3
-
 RESULT=`dig +short +time=2 +tries=1 nordicom.no`
 
 date
