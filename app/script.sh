@@ -2,7 +2,7 @@
 
 set -x
 
-RESULT=`dig +short +time=3 +tries=1 nordicom.no`
+RESULT=`dig +short +time=3 +tries=5 nordicom.no`
 
 date
 if [ "${RESULT}" == ";; connection timed out; no servers could be reached" ]; then
