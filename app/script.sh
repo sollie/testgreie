@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -x
+#set -x
 
 RESULT=`dig +short +time=2 +tries=1 nordicom.no`
 
