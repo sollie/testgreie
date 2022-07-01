@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -x
+
 RESULT=`dig +short +time=3 +tries=1 nordicom.no`
 
 date
